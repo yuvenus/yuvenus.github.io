@@ -8,6 +8,8 @@ class Navigation extends React.Component {
         <ul className="nav-list">
           <li className="nav-item"><Link to="/">home</Link></li>
           <li className="nav-item"><Link to="/about">about</Link></li>
+          <li className="nav-item"><Link to="/resume">resume</Link></li>
+          {/* <li className="nav-item"><Link to="/themes">themes</Link></li> */}
         </ul>
       </div>
     );
