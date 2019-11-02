@@ -1,2 +1,0 @@
-# yuvenus.github.io
-portfolio
