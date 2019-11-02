@@ -4,9 +4,9 @@ class About extends React.Component {
     render() {
         return (
             <div className="about">
-                This is where the about page would be :)
+                {/* <p>In my free time I love knitting/crocheting :)</p> */}
             </div>
-        );
+        )
     }
 }
 

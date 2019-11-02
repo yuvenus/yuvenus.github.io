@@ -11,16 +11,27 @@ ul {
 }
 
 .router {
-  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  margin: 100px 150px;
+}
+
+.content-wrapper {
+  text-align: center; 
 }
 
 .navigation {
   .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 30px;
     .nav-item {
       text-transform: uppercase;
+      margin: 10px;
     }
   }
 }
