@@ -12,26 +12,41 @@ ul {
 
 .router {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  min-width: 500px;
+  width: 80%;
   margin: 100px 150px;
 }
 
-.content-wrapper {
-  text-align: center; 
-}
-
 .navigation {
+  width: 20%;
+  .my-face {
+    max-width: 120px;
+    border-radius: 10px;
+  }
   .nav-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin: 30px;
     .nav-item {
       text-transform: uppercase;
-      margin: 10px;
+      margin: 5px 0px;
+      .nav-item-link {
+        text-decoration: none;
+      }
     }
   }
+}
+
+.content-wrapper {
+  width: 80%;
+  min-width: 300px;
+  margin: 0px 30px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
