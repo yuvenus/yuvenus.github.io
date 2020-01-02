@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './content/home';
-import About from './content/about';
+import Skills from './content/skills';
 import { Switch, Route } from "react-router-dom";
 
 class ContentWrapper extends React.Component {
@@ -8,8 +8,8 @@ class ContentWrapper extends React.Component {
         return (
             <div className="content-wrapper">
               <Switch>
-                <Route path="/about">
-                  <About />
+                <Route path="/skills">
+                  <Skills />
                 </Route>
                 <Route path="/">
                   <Home />
