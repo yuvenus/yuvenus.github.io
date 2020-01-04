@@ -1,9 +1,21 @@
 @import './variables.scss';
 
 html, body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font, sans-serif;
+    color: white;
     margin: 0;
     padding: 0;
+}
+
+html {
+  background-image: url('../images/space-bg.jpg');
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
@@ -16,8 +28,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 80%;
-  margin: 100px 150px;
 }
 
 .navigation {
@@ -28,7 +38,7 @@ ul {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
+  
   .my-face {
     max-width: 120px;
     border-radius: 10px;
