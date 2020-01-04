@@ -2,9 +2,9 @@
 
 html, body {
     font-family: $font, sans-serif;
-    color: white;
-    margin: 0;
+     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 html {
@@ -26,16 +26,15 @@ ul {
 
 .router {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  max-width: 600px;
 }
 
 .navigation {
-  width: 20%;
-  height: 250px;
   background-color: $primary;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 20px;
   
@@ -46,12 +45,11 @@ ul {
   }
   .nav-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    margin: 10px 30px;
     .nav-item {
-      margin: 5px 0px;
+      margin: 5px 15px;
       .nav-item-link {
         color: white;
         text-decoration: none;
@@ -61,9 +59,9 @@ ul {
 }
 
 .content-wrapper {
-  width: 80%;
-  min-width: 300px;
-  margin: 0px 30px;
+  padding: 0px 30px;
+  background-color: white;
+  opacity: 50%;
 }
 
 .skills {
