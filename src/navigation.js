@@ -1,5 +1,4 @@
 import React from 'react';
-import face from './images/venusyu.jpg';
 import { Link } from "react-router-dom";
 
 class Navigation extends React.Component {
