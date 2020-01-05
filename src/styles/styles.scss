@@ -1,5 +1,7 @@
 @import './variables.scss';
 
+// ========== BASE HTML STYLING ========== //
+
 html, body {
     font-family: $font, sans-serif;
     font-size: 16px;
@@ -26,6 +28,16 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+// ========== ACTUAL COMPONENTS STYLING ========== //
+
 .router {
   display: flex;
   flex-direction: column;
@@ -40,7 +52,6 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 15px;
   border-radius: 10px 10px 0px 0px;
 
   .nav-list {
@@ -48,13 +59,19 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
+    margin-left: 15px;
 
     .nav-item {
-      margin: 5px 15px;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
 
-      .nav-item-link {
-        color: white;
-        text-decoration: none;
+      &.active {
+        background-color: $secondary;
+      }
+
+      &:hover {
+        background-color: $secondary;
       }
     }
   }

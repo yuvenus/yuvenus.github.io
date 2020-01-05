@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Navigation extends React.Component {
   render() {
     return (
       <div className="navigation">
         {/* <img className="my-face" src={face} alt="venusyu"></img> */}
-        <ul className="nav-list">
-          <li className="nav-item"><Link class="nav-item-link" to="/">Home</Link></li>
-          <li className="nav-item"><Link class="nav-item-link" to="/skills">Skills</Link></li>
-          <li className="nav-item"><a class="nav-item-link" href="/Venus Yu - Resume.pdf" target="_blank">Resume</a></li>
+        <div className="nav-list">
+          <NavLink className="nav-item" activeClassName="active" to="/home">Home</NavLink>
+          <NavLink className="nav-item" activeClassName="active" to="/skills">Skills</NavLink>
+          <a className="nav-item" href="/Venus Yu - Resume.pdf" target="_blank">Resume</a>
           {/* <li className="nav-item"><Link to="/themes">themes</Link></li> */}
-        </ul>
+        </div>
       </div>
     );
   }
