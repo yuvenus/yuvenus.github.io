@@ -71,8 +71,6 @@ class Skills extends React.Component {
             </div>
           </div>
 
-          {/* <hr></hr> */}
-
           <div className="skill-section"> 
             <h3>Frameworks</h3>
             <div className="skill-cards">
@@ -86,18 +84,6 @@ class Skills extends React.Component {
               {this.other.map(m => <SkillCard name={m.name} logo={m.logo} exp={m.exp}></SkillCard>)}      
             </div>
           </div>
-
-          {/* <div className="languages">
-            
-            {this.languages.map(lang => <p className="language">{lang}</p>)}
-          </div>
-          <div className="frameworks">
-            {this.frameworks.map(framework => <p className="framework">{framework}</p>)}
-          </div>
-          <div className="other">
-            <h4>Other</h4>
-            {this.other.map(o => <p className="other">{o}</p>)}
-          </div> */}
         </div>
     )
   }

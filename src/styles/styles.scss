@@ -42,8 +42,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 800px;
-  min-width: 300px;
+  max-width: 800px;
   height: 600px;
 }
 
@@ -59,7 +58,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 30px;
 
     .nav-item {
       padding: 15px;
@@ -79,7 +78,7 @@ a {
 
 .content-wrapper {
   padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.90);
   height: 85%;
   border-radius: 0px 0px 10px 10px;
   overflow-y: auto;
@@ -91,6 +90,7 @@ a {
     flex-direction: column;
     float: left;
     margin-right: 25px;
+    max-width: 150px;
 
     .links {
       font-size: 40px;
@@ -100,7 +100,7 @@ a {
     }
     
     .my-face {
-      max-width: 150px;
+      width: 100%;
       border-radius: 10px;
     }
   }
@@ -119,24 +119,32 @@ a {
     // color: $primary; 
   }
 
-  .skill-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-gap: 10px 10px;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  
-    h4 {
-      margin: 0;
+  .skill-section {
+    .skill-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      grid-gap: 10px 10px;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      
+      h4 {
+        margin: 0;
+      }
     }
   }
+
+  
 }
 
 .skill-card {
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.85);;
   padding: 10px;
+  border: 1px solid $secondary;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.90);
+  }
   
   .logo {
     width: 50px;
