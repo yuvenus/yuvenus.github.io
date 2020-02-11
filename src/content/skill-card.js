@@ -7,8 +7,8 @@ const SkillCard = (props) => {
           <div className="skill-info">
             <span className="skill-name">{props.name}</span>
             <div className="skill-exp">
-                {[...Array(props.exp)].map(m => <span><i class="fas fa-circle"></i></span>)}
-                {[...Array(10 - props.exp)].map(m => <span><i class="far fa-circle"></i></span>)}
+                {[...Array(props.exp)].map(m => <span><i className="fas fa-circle"></i></span>)}
+                {[...Array(10 - props.exp)].map(m => <span><i className="far fa-circle"></i></span>)}
             </div>
           </div>
         </div>

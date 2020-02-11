@@ -4,16 +4,17 @@
 
 html, body {
     font-family: $font, sans-serif;
-    font-size: 16px;
-    // letter-spacing: 0.03em;
+    font-size: 15px;
+    letter-spacing: 0.02em;
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 html {
-  background-image: url('../images/space-bg.jpg');
-  background-size: cover;
+  background-image: url('../images/leaves.png');
+  // background-size: cover;
+  // background-color: 
 }
 
 body {
@@ -36,6 +37,23 @@ a {
   }
 }
 
+// ========== HAVING SOME FUN WITH MEDIA QUERIES ========== //
+@media only screen and (max-width: 600px) {
+  .skill-section {
+    .skill-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-gap: 10px 10px;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+}
+
 // ========== ACTUAL COMPONENTS STYLING ========== //
 
 .router {
@@ -43,15 +61,17 @@ a {
   flex-direction: column;
   justify-content: center;
   max-width: 800px;
-  height: 600px;
+  height: 700px;
 }
 
 .navigation {
-  background-color: $primary;
+  // background-color: $primary;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 10px 10px 0px 0px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 550;
 
   .nav-list {
     display: flex;
@@ -62,15 +82,18 @@ a {
 
     .nav-item {
       padding: 15px;
-      color: white;
+      margin: 0 5px;
+      color: $primary;
       text-decoration: none;
+      letter-spacing: 0.5em;
+      text-indent: 0.5em;
 
       &.active {
-        background-color: $secondary;
+        border-bottom: 3px solid $primary;
       }
 
       &:hover {
-        background-color: $secondary;
+        border-bottom: 3px solid $primary;
       }
     }
   }
@@ -78,7 +101,7 @@ a {
 
 .content-wrapper {
   padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.90);
+  background-color: rgba(255, 255, 255, 0.50);
   height: 85%;
   border-radius: 0px 0px 10px 10px;
   overflow-y: auto;
@@ -104,6 +127,7 @@ a {
   }
 }
 
+// general home page
 .home {
   .face-wrapper {
     display: flex;
@@ -117,6 +141,10 @@ a {
       display: flex;
       justify-content: space-between;
       margin: 15px;
+
+      a {
+        padding: 5px;
+      }
     }
     
     .my-face {
@@ -128,6 +156,7 @@ a {
   // .about-me {}
 }
 
+// skill cards
 .skills {
   h3 {
     text-transform: uppercase;
@@ -152,18 +181,17 @@ a {
       }
     }
   }
-
-  
 }
 
 .skill-card {
   display: flex;
   align-items: center;
   padding: 10px;
+  background-color: rgba(255, 255, 255, 0.90);
   border: 1px solid $secondary;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: $secondary;
   }
   
   .logo {
@@ -191,5 +219,15 @@ a {
         }
       }
     }
+  }
+}
+
+.button-text {
+  border: none;
+  color: $primary;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $secondary;
   }
 }
