@@ -13,15 +13,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home">
-        <div className="face-wrapper">
-          {/* <img className="my-face" src={face} alt="venusyu"></img> */}
-          <div className="links">
-            <a href="https://www.linkedin.com/in/venus-yu-34a47993/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-            <a href="https://github.com/yuvenus" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
-          </div>
-        </div>
-        
+      <div className="home">        
         <div className="about-me">
           <div className="intro">
             <p>Hi there, I'm Venus! I am a full stack software developer. 
@@ -35,7 +27,12 @@ class Home extends React.Component {
           <button type="button" className="button-text" onClick={this.showMore}>
             Show {this.state.showMore ? "Less..." : "More..."}
           </button>
-
+        </div>
+        <div className="link-wrapper">
+          <div className="links">
+            <a href="https://www.linkedin.com/in/venus-yu-34a47993/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yuvenus" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
+          </div>
         </div>
       </div>
     );

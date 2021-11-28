@@ -8,11 +8,11 @@ class ContentWrapper extends React.Component {
         return (
             <div className="content-wrapper">
               <Switch>
-                <Route path="/skills">
-                  <Skills />
-                </Route>
                 <Route path="/home">
                   <Home />
+                </Route>
+                <Route path="/skills">
+                  <Skills />
                 </Route>
               </Switch>
               <Redirect from="/" to="home"/>
