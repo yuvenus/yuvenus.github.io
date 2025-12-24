@@ -1,16 +1,16 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Nav } from './components/nav'
-import { Home } from './pages/home'
 import { About } from './pages/about';
+import { Crafts } from './pages/crafts';
 
 function App() {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col gap-4 size-full">
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/crafts" element={<Crafts />} />
       </Routes>
     </div>
   );

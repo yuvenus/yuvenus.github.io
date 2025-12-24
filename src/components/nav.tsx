@@ -1,11 +1,8 @@
-'use client';
-
 import { NavLink } from "react-router-dom";
 
 export const Nav = () => {
     return (
-        <nav>
-            <NavLink to="/">Home</NavLink>
+        <nav className="flex justify-end gap-4">
             <NavLink to="/about">About</NavLink>
         </nav>
     );
