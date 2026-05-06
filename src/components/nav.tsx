@@ -4,16 +4,20 @@ import { headerIconStyle } from "../ui/icons";
 import { Button } from "../ui/shadcn/button";
 import { Menu, X } from "lucide-react";
 
+const navLinks = <>
+  <NavLink to="/about">About</NavLink>
+  <NavLink to="/skills">Skills</NavLink>
+  <NavLink to="/crafts">Crafts</NavLink>
+</>;
+
 export const Nav = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <>
+    <div className="flex flex-col gap-2">
       <nav className="flex justify-end @container">
         <div className="hidden items-center gap-4 @sm:flex">
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/skills">Skills</NavLink>
-          <NavLink to="/crafts">Crafts</NavLink>
+          {navLinks}
         </div>
 
         <Button
@@ -28,7 +32,7 @@ export const Nav = () => {
         </Button>
       </nav>
 
-      {mobileOpen && <div>hello</div>}
-    </>
+      {mobileOpen && <div className="flex flex-col gap-2">{navLinks}</div>}
+    </div>
   );
 };
