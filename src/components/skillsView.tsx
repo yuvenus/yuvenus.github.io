@@ -5,7 +5,13 @@ import { heading1Style, heading2Style } from "@/ui/heading";
 import { SkillBar } from "@/ui/skillBar";
 import { Category } from "@/utils/category";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
-import { primaryCardStyle, secondaryCardStyle } from "@/ui/cards";
+import {
+  accentCardStyle,
+  cardCardstyle,
+  foregroundCardStyle,
+  primaryCardStyle,
+  secondaryCardStyle,
+} from "@/ui/cards";
 import { Separator } from "@/ui/shadcn/separator";
 
 const SkillSchema = z.object({
@@ -120,8 +126,26 @@ const skillStyles: Partial<Record<string, SkillStyle>> = {
   [Category.Languages]: {
     cardStyle: secondaryCardStyle,
     textStyle: "text-secondary-foreground",
-    skillBarBgClass: "bg-secondary-foreground",
-    skillBarBorderClass: "border-secondary-foreground",
+    skillBarBgClass: "bg-primary-foreground/70",
+    skillBarBorderClass: "border-primary-foreground/70",
+  },
+  [Category.Infrastructure]: {
+    cardStyle: primaryCardStyle,
+    textStyle: "text-primary-foreground",
+    skillBarBgClass: "bg-accent",
+    skillBarBorderClass: "border-accent",
+  },
+  [Category.Frameworks]: {
+    cardStyle: accentCardStyle,
+    textStyle: "text-accent-foreground",
+    skillBarBgClass: "bg-foreground/70",
+    skillBarBorderClass: "border-foreground/70",
+  },
+  [Category.Other]: {
+    cardStyle: foregroundCardStyle,
+    textStyle: "text-foreground",
+    skillBarBgClass: "bg-secondary-foreground/70",
+    skillBarBorderClass: "border-secondary-foreground/70",
   },
 };
 
