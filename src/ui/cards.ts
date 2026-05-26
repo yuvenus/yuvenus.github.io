@@ -1,13 +1,14 @@
 export const primaryCardStyle =
-  "border border-primary/45 ring-primary/45 bg-primary/45";
+  "border border-primary ring-primary bg-primary text-primary-foreground";
 
 export const secondaryCardStyle =
-  "border border-secondary/50 ring-secondary/50 bg-secondary/50";
+  "border border-secondary ring-secondary bg-secondary text-secondary-foreground";
 
-export const cardCardstyle = "border border-card/50 ring-card/50 bg-card/50";
+export const cardCardstyle =
+  "border border-card-foreground ring-card-foreground bg-card text-card-foreground";
 
 export const accentCardStyle =
-  "border border-accent/30 ring-accent/30 bg-accent/30";
+  "border border-accent ring-accent bg-accent text-accent-foreground";
 
-export const foregroundCardStyle =
-  "border border-foreground/10 ring-foreground/10 bg-foreground/10";
+export const mutedCardStyle =
+  "border border-muted ring-muted bg-muted text-muted-foreground";

@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
 import {
   accentCardStyle,
   cardCardstyle,
-  foregroundCardStyle,
+  mutedCardStyle,
   primaryCardStyle,
   secondaryCardStyle,
 } from "@/ui/cards";
@@ -115,7 +115,6 @@ const allSkills: Record<string, Skill[]> = {
 
 const SkillStyleSchema = z.object({
   cardStyle: z.string(),
-  textStyle: z.string(),
   skillBarBgClass: z.string(),
   skillBarBorderClass: z.string(),
 });
@@ -125,27 +124,23 @@ type SkillStyle = z.infer<typeof SkillStyleSchema>;
 const skillStyles: Partial<Record<string, SkillStyle>> = {
   [Category.Languages]: {
     cardStyle: secondaryCardStyle,
-    textStyle: "text-secondary-foreground",
-    skillBarBgClass: "bg-primary-foreground/70",
-    skillBarBorderClass: "border-primary-foreground/70",
+    skillBarBgClass: "bg-muted-foreground",
+    skillBarBorderClass: "border-muted-foreground",
   },
   [Category.Infrastructure]: {
     cardStyle: primaryCardStyle,
-    textStyle: "text-primary-foreground",
     skillBarBgClass: "bg-accent",
     skillBarBorderClass: "border-accent",
   },
   [Category.Frameworks]: {
     cardStyle: accentCardStyle,
-    textStyle: "text-accent-foreground",
-    skillBarBgClass: "bg-foreground/70",
-    skillBarBorderClass: "border-foreground/70",
+    skillBarBgClass: "bg-foreground",
+    skillBarBorderClass: "border-foreground",
   },
   [Category.Other]: {
-    cardStyle: foregroundCardStyle,
-    textStyle: "text-foreground",
-    skillBarBgClass: "bg-secondary-foreground/70",
-    skillBarBorderClass: "border-secondary-foreground/70",
+    cardStyle: mutedCardStyle,
+    skillBarBgClass: "bg-secondary",
+    skillBarBorderClass: "border-secondary",
   },
 };
 
@@ -156,11 +151,7 @@ export const SkillsView = () => {
         <Card className={skillStyles[category]?.cardStyle ?? ""}>
           <CardHeader>
             <CardTitle>
-              <h1
-                className={`${heading1Style} ${skillStyles[category]?.textStyle ?? ""}`}
-              >
-                {category}
-              </h1>
+              <h1 className={heading1Style}>{category}</h1>
             </CardTitle>
             <Separator
               className={`w-full h-0.25 ${skillStyles[category]?.skillBarBgClass ?? ""}`}
@@ -169,9 +160,7 @@ export const SkillsView = () => {
           <CardContent className="@container">
             <div className="grid grid-cols-1 gap-6 @sm:grid-cols-2 @lg:grid-cols-3">
               {skills.map((skill) => (
-                <div
-                  className={`${skillStyles[category]?.textStyle ?? ""} flex flex-col gap-1`}
-                >
+                <div className="flex flex-col gap-1">
                   <div className="flex gap-1 justify-between">
                     <span className="font-semibold">{skill.name}</span>{" "}
                     <span>{skill.percentage}%</span>
