@@ -1,13 +1,12 @@
 "use client";
 
 import z from "zod";
-import { heading1Style, heading2Style } from "@/ui/heading";
+import { heading1Style } from "@/ui/heading";
 import { SkillBar } from "@/ui/skillBar";
 import { Category } from "@/utils/category";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
 import {
   accentCardStyle,
-  cardCardstyle,
   mutedCardStyle,
   primaryCardStyle,
   secondaryCardStyle,

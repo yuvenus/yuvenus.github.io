@@ -8,7 +8,7 @@ import { Crafts } from "@/pages/crafts";
 function App() {
   return (
     <div className="flex flex-col gap-4 size-full">
-      <Nav />
+      {/* <Nav /> */}
       <Routes>
         <Route path="/" element={<Base />} />
         <Route path="/about" element={<About />} />
