@@ -1,8 +1,8 @@
 "use client";
 
 import { SkillsView } from "@/components/skillsView";
-import { cardCardstyle, primaryCardStyle } from "@/ui/cards";
-import { heading1Style, heading2Style } from "@/ui/heading";
+import { cardCardstyle } from "@/ui/cards";
+import { heading1Style } from "@/ui/heading";
 import { Card, CardContent } from "@/ui/shadcn/card";
 
 export const About = () => {

@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Nav } from "@/components/nav";
 import { Base } from "@/pages/base";
 import { About } from "@/pages/about";
 import { Crafts } from "@/pages/crafts";

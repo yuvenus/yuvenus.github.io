@@ -1,3 +1,3 @@
 # Deployment
 
-Run `pnpm deploy`.
+Run `pnpm run deploy`.
