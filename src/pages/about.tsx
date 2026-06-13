@@ -1,7 +1,7 @@
 "use client";
 
 import { SkillsView } from "@/components/skillsView";
-import { cardCardstyle } from "@/ui/cards";
+import { mainCardStyle } from "@/ui/cards";
 import { heading1Style } from "@/ui/heading";
 import { Card, CardContent } from "@/ui/shadcn/card";
 
@@ -17,8 +17,8 @@ export const About = () => {
   );
 
   return (
-    <div className="flex flex-col gap-6 text-start">
-      <Card className={cardCardstyle}>
+    <div className="flex flex-col gap-6 p-6 text-start">
+      <Card className={mainCardStyle}>
         <CardContent>{aboutBlurb}</CardContent>
       </Card>
       <SkillsView />

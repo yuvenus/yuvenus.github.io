@@ -147,7 +147,7 @@ export const SkillsView = () => {
   return (
     <div className="flex flex-col gap-6">
       {Object.entries(allSkills).map(([category, skills]) => (
-        <Card className={skillStyles[category]?.cardStyle ?? ""}>
+        <Card key={category} className={skillStyles[category]?.cardStyle ?? ""}>
           <CardHeader>
             <CardTitle>
               <h1 className={heading1Style}>{category}</h1>

@@ -4,8 +4,8 @@ export const primaryCardStyle =
 export const secondaryCardStyle =
   "border border-secondary ring-secondary bg-secondary text-secondary-foreground";
 
-export const cardCardstyle =
-  "border border-card-foreground ring-card-foreground bg-card text-card-foreground";
+export const mainCardStyle =
+  "border-transparent bg-linear-to-r from-foreground to-muted text-muted-foreground";
 
 export const accentCardStyle =
   "border border-accent ring-accent bg-accent text-accent-foreground";
