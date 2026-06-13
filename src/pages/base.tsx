@@ -1,11 +1,9 @@
-'use client';
-
-import { useEffect } from "react";
+"use client";
 
 export const Base = () => {
-    useEffect(() => {
-        window.location.href = "/about";
-    }, []);
+  // useEffect(() => {
+  //     window.location.href = "/about";
+  // }, []);
 
-    return null;
+  return null;
 };
