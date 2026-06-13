@@ -123,23 +123,23 @@ type SkillStyle = z.infer<typeof SkillStyleSchema>;
 const skillStyles: Partial<Record<string, SkillStyle>> = {
   [Category.Languages]: {
     cardStyle: secondaryCardStyle,
-    skillBarBgClass: "bg-muted-foreground",
-    skillBarBorderClass: "border-muted-foreground",
+    skillBarBgClass: "bg-secondary-foreground",
+    skillBarBorderClass: "border-secondary-foreground",
   },
   [Category.Infrastructure]: {
-    cardStyle: primaryCardStyle,
-    skillBarBgClass: "bg-accent",
-    skillBarBorderClass: "border-accent",
+    cardStyle: accentCardStyle,
+    skillBarBgClass: "bg-accent-foreground",
+    skillBarBorderClass: "border-accent-foreground",
   },
   [Category.Frameworks]: {
-    cardStyle: accentCardStyle,
-    skillBarBgClass: "bg-foreground",
-    skillBarBorderClass: "border-foreground",
+    cardStyle: primaryCardStyle,
+    skillBarBgClass: "bg-primary-foreground",
+    skillBarBorderClass: "border-primary-foreground",
   },
   [Category.Other]: {
     cardStyle: mutedCardStyle,
-    skillBarBgClass: "bg-secondary",
-    skillBarBorderClass: "border-secondary",
+    skillBarBgClass: "bg-muted-foreground",
+    skillBarBorderClass: "border-muted-foreground",
   },
 };
 

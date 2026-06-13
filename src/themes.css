@@ -34,13 +34,13 @@
   --popover: hsl(0 0 100);
   --popover-foreground: hsl(359 100 70);
   --primary: hsl(165 56 69);
-  --primary-foreground: hsl(30 50.7 20);
+  --primary-foreground: hsl(30 50.7 25);
   --secondary: hsl(359 100 70);
-  --secondary-foreground: hsl(0 0 100);
+  --secondary-foreground: hsl(30 50.7 25);
   --muted: hsl(153 100 82);
-  --muted-foreground: hsl(30 50.7 20);
+  --muted-foreground: hsl(30 50.7 25);
   --accent: hsl(5 100 81);
-  --accent-foreground: hsl(30 50.7 20);
+  --accent-foreground: hsl(30 50.7 25);
   --destructive: oklch(0.6835 0.214 16.29);
   --success: oklch(0.9011 0.1573 145.42);
   --warning: oklch(0.8394 0.177 45.78);
