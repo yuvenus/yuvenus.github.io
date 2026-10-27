@@ -35,12 +35,16 @@ const allSkills: Record<string, Skill[]> = {
       percentage: 80,
     },
     {
-      name: "Python",
+      name: "GraphQL",
       percentage: 75,
     },
     {
       name: "SQL",
       percentage: 75,
+    },
+    {
+      name: "Python",
+      percentage: 60,
     },
     {
       name: "C#",
@@ -92,11 +96,15 @@ const allSkills: Record<string, Skill[]> = {
     },
     {
       name: "Kubernetes",
-      percentage: 50,
+      percentage: 30,
+    },
+    {
+      name: "Flux",
+      percentage: 30,
     },
     {
       name: "Google Cloud Platform",
-      percentage: 30,
+      percentage: 20,
     },
   ],
   [Category.Databases]: [
@@ -140,10 +148,6 @@ const allSkills: Record<string, Skill[]> = {
     },
     {
       name: "Hasura",
-      percentage: 75,
-    },
-    {
-      name: "GraphQL",
       percentage: 75,
     },
     {
