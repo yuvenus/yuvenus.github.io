@@ -5,7 +5,6 @@ import { Moon, Sun } from "lucide-react";
 
 type Theme = "light" | "dark";
 
-// index.html sets data-theme before first paint (saved choice, else system); read it back here
 const currentTheme = (): Theme =>
   document.documentElement.dataset.theme === "dark" ? "dark" : "light";
 
