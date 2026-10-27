@@ -3,5 +3,5 @@ export const Category = {
   Infrastructure: "Infrastructure",
   Languages: "Languages",
   Databases: "Databases",
-  Other: "Other Technologies",
+  Miscellaneous: "Miscellaneous",
 };

@@ -91,6 +91,10 @@ const allSkills: Record<string, Skill[]> = {
       percentage: 60,
     },
     {
+      name: "Kubernetes",
+      percentage: 50,
+    },
+    {
       name: "Google Cloud Platform",
       percentage: 30,
     },
@@ -105,17 +109,33 @@ const allSkills: Record<string, Skill[]> = {
       percentage: 75,
     },
     {
-      name: "MariaDB",
+      name: "MySQL",
       percentage: 75,
     },
   ],
-  [Category.Other]: [
+  [Category.Miscellaneous]: [
     {
       name: "OCPP",
       percentage: 90,
     },
     {
       name: "OCPI",
+      percentage: 90,
+    },
+    {
+      name: "Git",
+      percentage: 90,
+    },
+    {
+      name: "BitBucket",
+      percentage: 90,
+    },
+    {
+      name: "Jira",
+      percentage: 90,
+    },
+    {
+      name: "Scrum",
       percentage: 90,
     },
     {
@@ -183,7 +203,7 @@ const skillStyles: Partial<Record<string, SkillStyle>> = {
     activeButtonClass:
       "border-fuchsia-700 text-fuchsia-700 dark:border-fuchsia-400 dark:text-fuchsia-300",
   },
-  [Category.Other]: {
+  [Category.Miscellaneous]: {
     chipClass:
       "bg-amber-100 text-amber-700 dark:bg-amber-400/15 dark:text-amber-300",
     swatchClass: "bg-amber-700 dark:bg-amber-400",

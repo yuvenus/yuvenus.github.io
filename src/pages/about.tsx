@@ -15,6 +15,13 @@ export const About = () => {
           <p className="mt-3 font-mono text-sm text-primary before:text-muted-foreground before:content-['>_']">
             full-stack software engineer
           </p>
+          <p className="mt-5 max-w-[62ch] text-[15px] leading-relaxed [&_b]:font-semibold [&_b]:text-ink">
+            <b>9+ years</b> building software end to end:{" "}
+            <b>React and Next.js</b> front ends, <b>Java, Node.js, and C#</b>{" "}
+            back ends, and <b>AWS</b> cloud deployments. A problem-solver, avid
+            learner, and strong communicator. Most recently at <b>S44 Energy</b>
+            .
+          </p>
         </div>
         <ThemeToggle />
       </header>
