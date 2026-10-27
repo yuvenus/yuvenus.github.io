@@ -91,6 +91,10 @@ const allSkills: Record<string, Skill[]> = {
       percentage: 75,
     },
     {
+      name: "Jenkins",
+      percentage: 75,
+    },
+    {
       name: "Terraform",
       percentage: 60,
     },
@@ -135,7 +139,7 @@ const allSkills: Record<string, Skill[]> = {
       percentage: 90,
     },
     {
-      name: "BitBucket",
+      name: "Bitbucket",
       percentage: 90,
     },
     {
@@ -155,8 +159,8 @@ const allSkills: Record<string, Skill[]> = {
       percentage: 75,
     },
     {
-      name: "Jenkins",
-      percentage: 75,
+      name: "Elasticsearch",
+      percentage: 50,
     },
   ],
 };
